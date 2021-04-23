@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: pr;
+    src: url(../fonts/pr.woff) format("woff");
+}
+@font-face{
+    font-family: pb;
+    src: url(../fonts/pb.woff) format("woff");
+}
+@font-face{
+    font-family: pl;
+    src: url(../fonts/pl.woff) format("woff");
+}
+body{
+    font: 14px pr,sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+[disabled]{
+    cursor: none;
+}
+img{
+    vertical-align: bottom;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+.row{
+    margin: 0 -15px;
+}
+.row::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.col-1{ width: 8.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-2{ width: 16.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-3{ width: 25%; float: left; padding: 0 15px; min-height: 1px }
+.col-4{ width: 33.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-5{ width: 41.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-6{ width: 50%; float: left; padding: 0 15px; min-height:1px; }
+.col-7{ width: 58.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-8{ width: 66.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-9{ width: 75%; float: left; padding: 0 15px; min-height:1px; }
+.col-10{ width: 83.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-11{ width: 91.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-12{ width: 100%; float: left; padding: 0 15px; min-height:1px; }
+.wrap-1{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 0;
+}
+.wrap-1 .icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 62px;
+}
+.wrap-1 nav{}
+.wrap-1 nav ul{display: inline-block;}
+.wrap-1 nav ul li{display: inline-block; margin-right: 22px;}
+.wrap-1 nav ul li a{
+color:#fff;
+line-height: 62px;
+font-family: pr;
+font-size: 16px;
+}
+.wrap-1 button,.wrap-2 button{
+color: red;
+border: 2px solid ;
+background-color: transparent;
+border-radius: 10px;
+padding: 5px;
+}
+.btn{
+width: 90px;
+font-size: 16px;
+margin-top: 15px;
+float: right;
+}
+.clear{
+    clear: both;
+}
+.wrap-2 {
+    background-color: #666666;
+    padding: 200px 0;
+}
+.video{
+margin: 10px 0;
+float: left;
+}
+.video button{
+    color: white;
+    font-size: 150px;
+    border-color: #666;
+}
+.text{
+float: left;
+color: white;
+margin-top: 40px;
+margin-left:40px;
+
+}
+.text p{
+    font-family: pr, sans-serif;
+    font-size: 60px;  
+}
+.text a{
+    font-size: 16px;
+    color: #a53d3d;
+    font-weight: 600;
+}
+.wrap-3{
+    background-color: #ca3c3c;
+    color: white;
+    padding: 40px 0;
+}
+.wrap-3 h1{
+    font-size: 72px;
+    line-height: 60px;
+    border-bottom: 10px solid;
+}
+.feature{
+    margin: 10px 0;
+}
+.feature .circle{ width: 100px; line-height: 96px; border: 2px solid; border-radius: 50%; text-align: center; float: left; margin-right: 30px;}
+.feature span.fa{
+    font-size: 36px;
+    vertical-align: middle;
+}
+.feature h2{
+    font-size: 16px;
+    line-height: 30px;
+}
+.feature p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.wrap-4{
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+.wrap-4 span.fa{
+    color: #ca3c3c;
+    font-size: 36px;
+    margin: 0 90px;
+
+}
+.wrap-5 {
+    background-color: #ebebeb;
+    padding: 90px 0;
+}
+.wrap-5 h1{
+    font-size: 72px;
+    line-height: 60px;
+    border-bottom: 10px black solid ;
+}
+.wrap-5 button{
+    color: red;
+border: 2px solid ;
+background-color: transparent;
+border-radius: 10px;
+padding: 5px;
+width: 90px;
+font-size: 16px;
+margin-top: 15px;
+margin-right: 10px;
+}
+.wrap-5 button:active{
+    background-color: red;
+    color: white;
+}
+.image{
+    position: relative;
+    margin-top: 30px;
+}
+.image img{
+    max-width: 100%;
+}
+.details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    padding:20px 0 ;
+    display: none;
+}
+.image:hover .details{
+    display: block;
+}
+.details p strong{
+    font-size: 18px;
+    color: #ca3c3c;
+    line-height: 40px;
+}
+.details p small{ 
+    font-size: 14px; color: #898989; line-height: 20px;}
+.wrap-5 span.fa, .wrap-7 .add{
+    color: #ca3c3c;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.wrap-6{
+    background-color: #666;;
+    color: #fff;
+    text-align: center;
+    padding: 65px 0 30px 0;
+}
+.wrap-6 p{
+    font-size: 36px;
+    line-height: 41px;
+    font-family: pl,Arial, Helvetica, sans-serif;
+}
+.wrap-6 p::before{
+    content: open-quote;
+}
+.wrap-6 p::after{
+    content: close-quote;
+}
+.wrap-6 img{
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.slide span.fa{
+    margin: 15px 5px;
+    background-color: transparent;
+}
+.slide span.fa:hover{
+    background-color: white;
+}
+.wrap-7{
+    background-color: white;
+    padding: 100px 0;
+}
+.wrap-7 .content{
+    position: relative;
+}
+.wrap-7 .icons{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+   
+}
+.wrap-7 h2{
+    border-bottom: 10px solid;
+    font-size: 72px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.icons span.fa{
+    border: 5px solid #ca3c3c;
+    border-radius: 50%;
+    background-color: #ca3c3c;
+    padding: 2px;
+}
+.wrap-7 .detail{
+
+}
+.wrap-7 .detail p strong{
+    font-size: 18px;
+    color: #ca3c3c;
+    line-height: 30px;
+}
+.wrap-7 .detail p small{
+    font-size: 14px; color: #898989; line-height: 20px; 
+}
+.detail p:last-child{
+    margin-top: 15px;
+}
+.wrap-8{
+    background-color: #666;
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+.wrap-8 span.fa{
+    font-size: 72px;
+    line-height: 41px;
+    margin-bottom: 30px;
+}
+.wrap-8 h2{
+    font-size: 72px;
+    line-height: 41px;
+    font-family: pl;
+    margin-bottom: 10px;
+}
+.wrap-8 p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.wrap-9{
+    background-color: #ca3c3c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+}
+.email{
+    margin: 10px 0;
+}
+.email input{
+    font-size: 36px;
+    line-height: 41px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+.email input::placeholder{
+    color:white;
+    font-family: pr;
+}
+.email button{
+ color: red;
+border: 2px solid ;
+background-color: white;
+border-radius: 10px;
+padding: 5px;
+width: 90px;
+font-size: 16px;
+
+}

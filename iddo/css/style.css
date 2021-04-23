@@ -1,0 +1,123 @@
+*{ margin: 0; box-sizing: border-box}
+a{ text-decoration: none}
+ul{ list-style: none; padding: 0}
+img{ vertical-align: bottom}
+button{ cursor: pointer}
+[disabled]{ cursor: not-allowed}
+
+@font-face{
+    font-family:pr;
+    src:url(../fonts/pr.woff) format('woff');
+}
+@font-face{
+    font-family:pb;
+    src:url(../fonts/pb.woff) format('woff');
+}
+@font-face{
+    font-family:pl;
+    src:url(../fonts/pl.woff) format('woff');
+}
+
+
+.thin{ font-family: pl, sans-serif;  }
+h1, h2, h3, h4, th, b, strong{ font-family: pb, sans-serif}
+body{ font: 14px  pr, sans-serif;  }
+.clear{ clear: both}
+
+.container{ width: 1200px; margin: auto; padding: 0 15px;}
+.row{ margin: 0 -15px }
+.row:after{ content: ""; clear: both; display: block }
+.col-1{ width: 8.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-2{ width: 16.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-3{ width: 25%; float: left; padding: 0 15px; min-height: 1px }
+.col-4{ width: 33.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-5{ width: 41.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-6{ width: 50%; float: left; padding: 0 15px; min-height:1px; }
+.col-7{ width: 58.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-8{ width: 66.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-9{ width: 75%; float: left; padding: 0 15px; min-height:1px; }
+.col-10{ width: 83.33%; float: left; padding: 0 15px; min-height:1px; }
+.col-11{ width: 91.66%; float: left; padding: 0 15px; min-height:1px; }
+.col-12{ width: 100%; float: left; padding: 0 15px; min-height:1px; }
+
+/*Custom */
+.wrap-1{ background: #000; color: #fff}
+h1{ font-size: 30px; }
+h1 a{ color: inherit;  line-height: 80px;}
+.wrap-1 nav{ }
+.wrap-1 nav ul{ }
+.wrap-1 nav ul li{ float: left }
+.wrap-1 nav ul li a{ display: block; color: inherit; font-size: 16px; line-height: 80px; margin: 0 5px;}
+.wrap-1 nav ul li a{ display: block; color: inherit; font-size: 16px; line-height: 80px; padding: 0 15px; }
+.btn{ width: 90px; height: 35px; border: 2px solid; color: #ca3c3c; background: transparent;  font-size: 16px; border-radius: 10px; margin-top: 23px;}
+.wrap-1 .btn{ float: right }
+.wrap-2{ background: #666; color: #fff; }
+
+.video{ padding: 200px 0; }
+.video button{ background: transparent; color: #fff; font-size: 150px; border: none; float: left; margin-right: 40px }
+.video p.thin{ font-size: 60px; padding-top: 40px }
+.video a{ font-size: 16px; color: #ca3c3c }
+
+h2{ font-size: 72px; border-bottom: 10px solid; text-transform: uppercase; line-height: 60px;}
+
+.wrap-3{ background: #ca3c3c; color: #fff; padding: 20px 0;}
+
+.feature{ margin: 30px 0; }
+.feature .circle{ width: 100px; line-height: 96px; border: 2px solid; border-radius: 50%; text-align: center; float: left; margin-right: 30px;}
+.feature .circle span.fa{ font-size: 36px; vertical-align: middle }
+.feature h3{ font-size: 16px; line-height: 30px}
+.feature p.thin{ font-size: 14px; line-height: 22px}
+.wrap-4{ background: #fff; color: #ca3c3c; line-height: 150px; text-align: center; font-size: 36px;}
+.wrap-5{ background: #ebebeb; color: #363636; padding: 95px 0;}
+.btn.active{ background: #ca3c3c; color: #fff; border-color: #ca3c3c; }
+.wrap-5 .btn{ margin-right: 10px}
+.project{ position: relative; margin-top: 30px;}
+.project img{ max-width: 100%}
+.project .details{ position: absolute; bottom: 0; left: 0; background: #fff; width: 100% ; text-align: center; padding: 20px 0; display: none}
+.project .details p strong{ font-size: 18px; color: #ca3c3c; line-height: 40px }
+.project .details p small{ font-size: 14px; color: #898989; line-height: 20px  }
+.project:hover .details{ display: block}
+
+.wrap-6{ padding: 50px 0; background: #666; color: #fff; text-align: center}
+.reviews{ }
+.reviews .review{ display: none}
+.reviews .review img{border-radius: 50%}
+.reviews .review.active{ display: block}
+
+.reviews .review blockquote{ font-size: 36px;}
+.reviews .review blockquote:before{ content: open-quote}
+.reviews .review blockquote:after{ content: close-quote}
+
+.pager{ }
+.pager ul{ }
+.pager ul li{ display: inline-block; margin: 5px;}
+.pager ul li a{ display: inline-block; width: 10px; height: 10px; border: 2px solid; border-radius: 50%; color: #fff}
+.pager ul li a.active{ background: #fff }
+
+.wrap-7{ background: #fff; color: #333; padding: 95px 0;}
+.team{position: relative }
+.team > img{ border-radius: 50%; }
+.social{ position: absolute; right: 60px; top: 60px;}
+.social ul{ }
+.social ul li{ float: left; margin-left: 10px }
+.social ul li a{ display: block; width: 50px; line-height: 50px; text-align: center; background: #ca3c3c; color: #fff; border-radius: 50%; font-size: 24px }
+.gap100{ margin-left: 100px }
+.wrap-8{ background: #666; color: #fff; text-align: center; padding: 80px 0;}
+.wrap-8 span.fa{ font-size: 72px }
+.wrap-8 p.large{ font-size: 72px }
+.wrap-8 b{ font-size: 18px }
+
+.wrap-9{ background: #fff; color: #333; padding: 95px 0;}
+.wrap-10{ background: #ca3c3c; color: #fff; padding: 20px 0}
+.wrap-10 form{ }
+.wrap-10 form input{ display: block; border: none; background: transparent; width: 100%; font-size: 36px; color: #fff }
+.wrap-10 form input:focus{ outline: 1px dashed #fff}
+.wrap-10 form input::placeholder{ color: #fff  }
+.wrap-10 form button.btn{ background: #fff; color: #ca3c3c; margin-top: 0 }
+.wrap-11{ background: #7f7f7f; padding: 20px 0;}
+.wrap-12{ padding: 95px 0; background: #ebebeb; color: #333;}
+.wrap-12 form label{ display: block; width: 100%; border: 2px solid; padding: 16px; margin: 15px 0;}
+.wrap-12 form input{ background: transparent; border: none}
+.wrap-12 form textarea{ background: transparent; border: none; resize: none; vertical-align: top}
+.wrap-12 form button{ font-size: 16px; background: #fff; display: block; width: 100%; height: 80px; border: none;  margin: 15px 0; border-radius: 10px; color: #ca3c3c; }
+.wrap-12 form button span{ font-size: 36px; }
